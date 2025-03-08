@@ -4,8 +4,8 @@ function Banner() {
       <div className="bancont">
         <h2>Your Mental Health, Our Priority</h2>
         <p>
-          We provide expert medical care with compassion and excellence. Your
-          well-being is our mission.
+          We provide compassionate and expert mental health care, prioritizing
+          your well-being every step of the way.
         </p>
         <button>
           <a href="/appointment">BOOK APPOINTMENT NOW</a>

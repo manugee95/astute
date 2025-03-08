@@ -19,6 +19,7 @@ body {
 }
 .logo img{
   height: 100px;
+  margin-left: -50px;
 }
 .contInfo{
   display: flex;
@@ -26,7 +27,7 @@ body {
 }
 .contInfo .contIcon{
   font-size: 25px;
-  color: rgb(0, 0, 117);
+  color: #03a4f5;
 }
 .contPhone{
   display: flex;
@@ -114,7 +115,7 @@ body {
 /* styling about */
 .about{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 50px;
   gap: 20px;
 }
@@ -125,6 +126,43 @@ body {
 .about h2{
   margin-bottom: 20px;
   text-align: center;
+  color: #03a4f5;
+}
+.welcome{
+  padding: 50px;
+}
+.firstLayer{
+  display: flex;
+  gap: 50px;
+}
+.firstLayer img{
+  height: 500px;
+}
+.welcomeban{
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../welcome.jpg);
+  height: 30vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+}
+.welcomeban h1{
+  font-size: 30px;
+  color: white;
+}
+.secondLayer{
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+.secondLayer div{
+  width: 33.3%;
+}
+.thirdLayer{
+  margin: 50px 0px;
 }
 /* styling about done */
 
@@ -142,6 +180,7 @@ body {
 .whyus h1{
   margin-bottom: 30px;
   text-align: center;
+  color: #03a4f5;
 }
 .whyuscont{
   display: flex;
@@ -193,9 +232,10 @@ body {
 
 /* styling footer */
 .footer{
-  background-color: #26ef9f;
+  background-color: #03a4f5;
   padding: 10px 0px;
   text-align: center;
+  color: white;
 }
 /* styling footer done */
 
@@ -315,10 +355,10 @@ body {
   font-size: 15px;
 }
 .bookform button{
-  background-color: #03a4f5;
+  background-color: #26ef9f;
   padding: 20px;
   border: none;
-  color: white;
+  color: black;
   border-radius: 25px;
   margin-top: 10px;
   font-size: 13px;
@@ -436,6 +476,44 @@ body {
   .about p{
     font-size: 15px;
   }
+  .welcome{
+    padding: 10px;
+  }
+  .welcomeban{
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../welcome.jpg);
+    height: 20vh;
+  }
+  .welcomeban h1{
+    font-size: 20px;
+  }
+  .firstLayer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .firstLayer p{
+    font-size: 15px;
+  }
+  .firstLayer img{
+    height: 300px;
+  }
+  .secondLayer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 5%;
+  }
+  .secondLayer p{
+    font-size: 15px;
+  }
+  .secondLayer div{
+    width: 100%;
+  }
+  .thirdLayer p{
+    font-size: 15px;
+  }
   .whyus{
     padding: 30px;
   }
@@ -518,6 +596,7 @@ body {
   .service2{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .service3{
     display: flex;
@@ -610,6 +689,44 @@ body {
   .about h2{
     margin-bottom: 20px;
     text-align: center;
+  }
+  .welcome{
+    padding: 20px;
+  }
+  .welcomeban{
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../welcome.jpg);
+    height: 20vh;
+  }
+  .welcomeban h1{
+    font-size: 20px;
+  }
+  .firstLayer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .firstLayer p{
+    font-size: 15px;
+  }
+  .firstLayer img{
+    height: 300px;
+  }
+  .secondLayer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 5%;
+  }
+  .secondLayer p{
+    font-size: 15px;
+  }
+  .secondLayer div{
+    width: 100%;
+  }
+  .thirdLayer p{
+    font-size: 15px;
   }
   .whyus{
     padding: 50px 20px;

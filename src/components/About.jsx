@@ -1,26 +1,19 @@
 function About() {
   return (
-    <div className="about" id="about">
+    <div className="about">
       <div>
         <img src="/about.jpg" alt="" />
       </div>
       <div>
-        <h2>About Us</h2>
+        <h2>Welcome to Astute Healthcare Clinic</h2>
         <p>
-          At <strong>Astute Healthcare Clinic</strong>, we are dedicated to
-          providing compassionate and professional mental health care to support
-          your well-being. Our expert team of therapists, psychologists, and
-          mental health professionals is committed to helping individuals
-          navigate challenges such as anxiety, depression, stress, and more.{" "}
+          Where compassionate mental health care and transformative healing come
+          together. We understand that life’s challenges can feel overwhelming,
+          but you don’t have to face them alone. <br />
+          At <strong>Astute Healthcare Clinic</strong>, we take a comprehensive approach to mental wellness, integrating evidence-based psychiatric care with supportive therapies to promote overall well-being.
           <br />
-          <br />
-          We believe that mental health is just as important as physical health.
-          That’s why we create a safe and supportive environment where you can
-          find the care, guidance, and resources you need to thrive. Whether
-          you’re seeking therapy, counseling, or personalized treatment plans,
-          we are here to help you on your journey to emotional wellness. <br />
-          <br />
-          <strong>You are not alone. We are here for you.</strong>
+          Whether you’re navigating <strong>anxiety, depression, ADHD, trauma, or other mental health concerns</strong>, our dedicated team is here to provide personalized, expert care. We focus not only on managing symptoms but also on addressing root causes, helping you build a foundation for lasting positive change. <br />
+          Your journey to better mental health starts here. Take the next step toward a <strong>happier, healthier you</strong> by scheduling an appointment today. At Astute Healthcare Clinic, we are committed to delivering the highest quality care while ensuring treatment is effective and tailored to your needs.
         </p>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import { MdKeyboardArrowRight } from "react-icons/md";
-
 function Services() {
   return (
     <div>
