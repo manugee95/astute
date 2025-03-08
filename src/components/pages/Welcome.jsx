@@ -2,7 +2,7 @@ function Welcome() {
   return (
     <div>
       <div className="welcomeban">
-        <h1>About</h1>
+        <h1>About Us</h1>
       </div>
       <div className="welcome">
         <div className="firstLayer">
