@@ -6,9 +6,11 @@ import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
+import useAlert from "../../hooks/useAlert";
 
 function Appointment() {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const { alertInfo, showAndHide } = useAlert();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -18,7 +20,6 @@ function Appointment() {
   });
 
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
 
   // Disable weekends (Saturday = 6, Sunday = 0)
   const isWeekday = (date) => {
@@ -34,12 +35,11 @@ function Appointment() {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessage("");
     setLoading(true);
 
     if (!executeRecaptcha) {
       console.error("reCAPTCHA not ready");
-      setMessage("Error with reCAPTCHA. Please refresh the page.");
+      showAndHide("error", "Error with reCAPTCHA. Please refresh the page.");
       setLoading(false);
       return;
     }
@@ -49,7 +49,7 @@ function Appointment() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/book-appointment",
+        "http://localhost:8000/api/book-appointment",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -57,14 +57,14 @@ function Appointment() {
             ...formData,
             appointmentDate: formData.appointmentDate?.toDateString(),
             appointmentTime: formData.appointmentTime?.toLocaleTimeString(),
-            captchaToken: token, // Send reCAPTCHA token to backend
+            captchaToken: token,
           }),
         }
       );
 
       const data = await response.json();
       if (response.ok) {
-        setMessage("Appointment booked successfully!");
+        showAndHide("success", "Appointment booked successfully!");
         setFormData({
           fullName: "",
           email: "",
@@ -73,11 +73,10 @@ function Appointment() {
           appointmentTime: null,
         });
       } else {
-        setMessage(data.error || "Failed to book appointment.");
+        showAndHide("error ", "Failed to book appointment.");
       }
     } catch (error) {
       console.error("Error:", error);
-      setMessage("Server error. Please try again.");
     }
 
     setLoading(false);
@@ -88,6 +87,23 @@ function Appointment() {
       <div className="appointmentban">
         <h1>Book an Appointment</h1>
       </div>
+      {alertInfo.show && (
+        <div
+          style={{
+            backgroundColor:
+              alertInfo.type === "success" ? "#28a745" : "#dc3545",
+            color: "white",
+            padding: "10px",
+            borderRadius: "5px",
+            textAlign: "center",
+            marginBottom: "10px",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
+          {alertInfo.message}
+        </div>
+      )}
       <div className="bookform">
         <form onSubmit={handleSubmit}>
           <input

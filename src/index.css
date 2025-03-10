@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 *{
   padding: 0%;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 /* Styling header */
@@ -25,8 +25,11 @@ body {
   display: flex;
   gap: 20px;
 }
+.contInfo p{
+  font-size: 20px;
+}
 .contInfo .contIcon{
-  font-size: 25px;
+  font-size: 20px;
   color: #03a4f5;
 }
 .contPhone{
@@ -94,7 +97,7 @@ body {
   font-size: 50px;
 }
 .bancont p{
-  font-size: 15px;
+  font-size: 18px;
 }
 .banner button{
   background-color: #03a4f5;
@@ -109,6 +112,7 @@ body {
 .banner button a{
   text-decoration: none;
   color: white;
+  /* font-size: 18px; */
 }
 /* Styling banner done */
 
@@ -127,9 +131,16 @@ body {
   margin-bottom: 20px;
   text-align: center;
   color: #03a4f5;
+  font-size: 30px;
+}
+.about p{
+  font-size: 18px;
 }
 .welcome{
   padding: 50px;
+}
+.welcome p{
+  font-size: 18px;
 }
 .firstLayer{
   display: flex;
@@ -157,12 +168,14 @@ body {
   display: flex;
   gap: 50px;
   margin-top: 50px;
+  font-size: 18px;
 }
 .secondLayer div{
   width: 33.3%;
 }
 .thirdLayer{
   margin: 50px 0px;
+  font-size: 18px;
 }
 /* styling about done */
 
@@ -225,7 +238,7 @@ body {
 }
 .whyfoot button a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
 }
 /* styling why us done */
@@ -264,6 +277,9 @@ body {
 }
 .services h2{
   margin-bottom: 20px;
+}
+.services p{
+  font-size: 18px;
 }
 .service1{
   display: flex;
@@ -377,7 +393,7 @@ body {
     gap: 10px;
   }
   .contInfo p{
-    font-size: 12px;
+    font-size: 15px;
   }
   .contInfo .contIcon{
     font-size: 15px;
@@ -471,13 +487,13 @@ body {
     gap: 20px;
   }
   .about h2{
-    font-size: 20px;
+    font-size: 25px;
   }
   .about img{
     display: none;
   }
   .about p{
-    font-size: 15px;
+    font-size: 18px;
   }
   .welcome{
     padding: 10px;
@@ -496,7 +512,7 @@ body {
     align-items: center;
   }
   .firstLayer p{
-    font-size: 15px;
+    font-size: 18px;
   }
   .firstLayer img{
     height: 300px;
@@ -508,14 +524,14 @@ body {
     margin-top: 50px;
     margin-left: 5%;
   }
-  .secondLayer p{
-    font-size: 15px;
+  .secondLayer{
+    font-size: 18px;
   }
   .secondLayer div{
     width: 100%;
   }
-  .thirdLayer p{
-    font-size: 15px;
+  .thirdLayer{
+    font-size: 18px;
   }
   .whyus{
     padding: 30px;
@@ -525,7 +541,7 @@ body {
     border-radius: 0%;
   }
   .whyus h1{
-    font-size: 20px;
+    font-size: 25px;
   }
   .whyuscont{
     display: flex;
@@ -536,10 +552,11 @@ body {
     width: 100%;
   }
   .whyuscont h3{
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: 10px;
   }
   .whyuscont p{
-    font-size: 12px;
+    font-size: 15px;
   }
   .whyfoot{
     padding: 50px 10px;
@@ -549,7 +566,7 @@ body {
     gap: 30px;
   }
   .whyfoot p{
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
   }
   .whyfoot button{
@@ -557,8 +574,9 @@ body {
     border: none;
     border-radius: 30px;
     text-align: center;
-    width: 100%;
+    width: 70%;
     cursor: pointer;
+    margin: 0 auto;
   }
   .whyfoot button a{
     text-decoration: none;
@@ -567,7 +585,7 @@ body {
   .footer{
     padding: 10px 0px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   .serviceban{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../services.jpg);
@@ -581,11 +599,11 @@ body {
   }
   .services h2{
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
   .services p{
-    font-size: 13px;
+    font-size: 18px;
   }
   .services img{
     height: 200px;
@@ -664,6 +682,10 @@ body {
   .contInfo .contIcon{
     font-size: 20px;
   }
+  .logoNav img{
+    height: 40px !important;
+    margin-left: -50px !important;
+  }
   .contInfo p{
     font-size: 15px;
   }
@@ -690,7 +712,7 @@ body {
     display: none;
   }
   .about h2{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
   }
   .welcome{
@@ -709,8 +731,8 @@ body {
     gap: 20px;
     align-items: center;
   }
-  .firstLayer p{
-    font-size: 15px;
+  .firstLayer{
+    font-size: 18px;
   }
   .firstLayer img{
     height: 300px;
@@ -722,14 +744,14 @@ body {
     margin-top: 50px;
     margin-left: 5%;
   }
-  .secondLayer p{
-    font-size: 15px;
+  .secondLayer{
+    font-size: 18px;
   }
   .secondLayer div{
     width: 100%;
   }
-  .thirdLayer p{
-    font-size: 15px;
+  .thirdLayer{
+    font-size: 18px;
   }
   .whyus{
     padding: 50px 20px;
@@ -769,10 +791,10 @@ body {
     border-radius: 20px;
   }
   .services h2{
-    font-size: 15px;
+    font-size: 20px;
   }
   .services p{
-    font-size: 13px;
+    font-size: 18px;
   }
   .service1{
     margin-bottom: 30px;
