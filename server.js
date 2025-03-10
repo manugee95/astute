@@ -69,6 +69,9 @@ app.post("/api/book-appointment", async (req, res) => {
           <p><b>Date:</b> ${appointmentDate}</p>
           <p><b>Time:</b> ${appointmentTime}</p>
         </div>
+        <div>
+            <p>This booking was made from Astute website</p>
+        </div>
       `,
     };
 
