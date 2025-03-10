@@ -8,6 +8,7 @@
 
 body {
   font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300;
 }
 
 /* Styling header */
@@ -161,7 +162,7 @@ body {
   padding: 0px 50px;
 }
 .welcomeban h1{
-  font-size: 30px;
+  font-size: 40px;
   color: white;
 }
 .secondLayer{
@@ -249,6 +250,7 @@ body {
   padding: 10px 0px;
   text-align: center;
   color: white;
+  font-size: 18px !important;
 }
 /* styling footer done */
 
@@ -265,7 +267,7 @@ body {
   padding: 0px 50px;
 }
 .serviceban h1{
-  font-size: 30px;
+  font-size: 40px;
   color: white;
 }
 .services{
@@ -355,6 +357,7 @@ body {
 }
 .appointmentban h1{
   color: white;
+  font-size: 40px;
 }
 .bookform{
   padding: 50px 0px;
@@ -503,7 +506,7 @@ body {
     height: 20vh;
   }
   .welcomeban h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .firstLayer{
     display: flex;
@@ -592,7 +595,7 @@ body {
     height: 20vh;
   }
   .serviceban h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .services{
     padding: 50px 10px;
@@ -660,7 +663,7 @@ body {
     padding: 0px 0px;
   }
   .appointmentban h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .bookform{
     padding: 50px 10px;
@@ -723,7 +726,7 @@ body {
     height: 20vh;
   }
   .welcomeban h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .firstLayer{
     display: flex;
@@ -786,6 +789,9 @@ body {
   .services{
     padding: 50px 15px;
   }
+  .serviceban h1{
+    font-size: 30px;
+  }
   .services img{
     height: 200px;
     border-radius: 20px;
@@ -822,6 +828,9 @@ body {
   }
   .service8{
     margin-bottom: 20px;
+  }
+  .appointmentban h1{
+    font-size: 30px;
   }
   .bookform{
     padding: 100px;
