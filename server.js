@@ -18,7 +18,9 @@ const EMAIL_PASS = process.env.EMAIL_PASS;
 
 // Configure Nodemailer Transporter
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "astutehcc.com",
+  port: 465,
+  secure: true,
   auth: {
     user: EMAIL_USER,
     pass: EMAIL_PASS,
